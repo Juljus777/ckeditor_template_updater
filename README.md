@@ -1,0 +1,1 @@
+# ckeditor_template_updater
