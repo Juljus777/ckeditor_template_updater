@@ -1,0 +1,36 @@
+<?php
+/**
+ * @file
+ * Contains template_updater.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function template_updater_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    case 'help.page.template_updater':
+      $output = '';
+      $output .= '<h3>' . t('Ckeditor Template Updater') . '</h3>';
+      $output .= '<p>' . t('The module adds a way to update ckeditor templates') . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Settings') . '</dt>';
+      $output .= '<dd>' . t('In the <a href=":text-formats">text formats</a> that use ckeditor, move the Template updater icon into the active toolbar.', [':text-formats' => \Drupal::url('filter.admin_overview')]) . '</dd>';
+      $output .= '</dl>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function template_updater_page_attachments_alter(array &$page) {
+  // Attaches js assets globally.
+  $page['#attached']['drupalSettings']['template_updater']['templateUpdater'] = [];
+}
