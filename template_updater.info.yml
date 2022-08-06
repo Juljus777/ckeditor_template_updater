@@ -1,0 +1,7 @@
+name: 'Template Updater'
+type: module
+description: 'Adds the possibility to update ckeditor templates'
+core_version_requirement: ^8.8 || ^9
+package: 'TV'
+libraries:
+  - template_updater/template_updater
