@@ -1,0 +1,7 @@
+template_updater:
+  js:
+    js/plugins/template_updater/plugin.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
