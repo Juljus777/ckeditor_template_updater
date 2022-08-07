@@ -1,7 +1,7 @@
-type Actions = {
+export type Actions = {
   action: 'insert',
   selector: string,
-  content: string
+  content: string,
 } | {
   action: 'wrap' | 'wrapInner',
   selector: string,
@@ -15,6 +15,11 @@ type Actions = {
   action: 'addClassName' | 'removeClassName',
   selector: string,
   className: string
+} | {
+  action: 'addAttribute' | 'removeAttribute',
+  selector: string,
+  attributeName: string,
+  attributeData?: string
 }
 
 export interface TemplateInterface {
