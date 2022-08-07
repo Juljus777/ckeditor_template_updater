@@ -1,6 +1,6 @@
 import {TemplateVersionsInterface} from "./interfaces";
 
-export const templateVersions:TemplateVersionsInterface[] = [
+export const templateVersions: TemplateVersionsInterface[] = [
   {
     'version': 1,
     'templates': [

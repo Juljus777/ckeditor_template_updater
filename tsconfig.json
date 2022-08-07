@@ -4,5 +4,7 @@
     "target": "es5",
     "allowJs": true
   },
-  "files": ["plugin.ts"]
+  "files": [
+    "src/plugin.ts"
+  ]
 }

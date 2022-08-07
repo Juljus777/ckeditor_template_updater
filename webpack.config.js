@@ -6,7 +6,7 @@ const isProduction = process.env.NODE_ENV == 'production';
 
 
 const config = {
-    entry: './plugin.ts',
+    entry: './src/plugin.ts',
     output: {
         filename: 'plugin.js',
         path: path.resolve(__dirname, 'js/plugins/template_updater'),
