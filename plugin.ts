@@ -51,6 +51,21 @@ import { TemplateVersionsInterface, ActionsInterface } from './interfaces';
               ]
             }
           ]
+        },
+        {
+          'version': 2,
+          'templates': [
+            {
+              'selector': '.cards',
+              'listOfActions': [
+                {
+                  'action': 'insert',
+                  'selector': '.card',
+                  'content': 'Hello V2'
+                }
+              ]
+            }
+          ]
         }
       ]
 

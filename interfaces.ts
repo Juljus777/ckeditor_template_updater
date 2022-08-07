@@ -1,4 +1,4 @@
-export type Actions = {
+type Actions = {
   action: 'insert',
   selector: string,
   content: string
