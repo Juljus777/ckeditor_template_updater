@@ -21,6 +21,7 @@ The actions are predefined and new ones can be added by updating the actionDicti
 ## Current roadmap
 1. Add the possibility to run actions on the template itself not only on its content by defining a "self" selector.
 2. Optimize the main function by adding versioning through data-version attributes and extra checks.
+3. Make the CKEditor button change depending on if there are any outdated templates on the page.
 
 ## How to contribute
 Use git flow.
