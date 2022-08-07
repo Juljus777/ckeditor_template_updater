@@ -1,0 +1,25 @@
+{
+  "name": "template_updater",
+  "version": "1.0.0",
+  "description": "Module for drupal that adds the ability for ckeditor to update templates based on versions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juljus777/ckeditor_template_updater.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juljus777/ckeditor_template_updater/issues"
+  },
+  "homepage": "https://github.com/Juljus777/ckeditor_template_updater#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.14"
+  }
+}
