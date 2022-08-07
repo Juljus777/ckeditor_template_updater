@@ -1,7 +1,7 @@
 //@ts-ignore
 /// <reference path="node_modules/@types/jquery/jQuery.d.ts" />
 
-import { TemplateVersionsInterface, ActionsInterface, Actions } from './interfaces';
+import {Actions} from './interfaces';
 import {actionDictionary} from "./actions";
 import {templateVersions} from "./templateVersions";
 
@@ -11,10 +11,10 @@ import {templateVersions} from "./templateVersions";
 
     icons: 'template_updater',
 
-    init: function (editor:any) {
+    init: function (editor: any) {
 
       editor.addCommand('updateTemplates', {
-        exec: function (editor:any):void {
+        exec: function (editor: any): void {
           let $context = $('.cke_wysiwyg_frame').contents();
           // Holy mother of complexity
           for (let version of templateVersions) {
@@ -38,7 +38,7 @@ import {templateVersions} from "./templateVersions";
     }
   })
 
-  function runAction($targetTemplate:JQuery, actionDefinition:Actions):void {
+  function runAction($targetTemplate: JQuery, actionDefinition: Actions): void {
     $targetTemplate.find(actionDefinition.selector).each(function () {
       actionDictionary[actionDefinition.action]($(this), actionDefinition);
     });
