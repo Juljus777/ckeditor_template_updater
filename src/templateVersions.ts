@@ -63,6 +63,11 @@ export const templateVersions: TemplateVersionsInterface[] = [
             'action': 'removeAttribute',
             'selector': '#epic',
             'attributeName': 'class'
+          },
+          {
+            'action': 'addClassName',
+            'selector': 'root',
+            'className': 'testTemplate'
           }
         ]
       }

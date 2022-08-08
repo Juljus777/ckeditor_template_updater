@@ -39,9 +39,13 @@ import {templateVersions} from "./templateVersions";
   })
 
   function runAction($targetTemplate: JQuery, actionDefinition: Actions): void {
-    $targetTemplate.find(actionDefinition.selector).each(function () {
-      actionDictionary[actionDefinition.action]($(this), actionDefinition);
-    });
+    if(actionDefinition.selector !== 'root') {
+      $targetTemplate = $targetTemplate.find(actionDefinition.selector);
+    }
+      $targetTemplate.each(function () {
+        actionDictionary[actionDefinition.action]($(this), actionDefinition);
+      });
+
   }
 })(jQuery);
 
